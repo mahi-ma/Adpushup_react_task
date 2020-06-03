@@ -1,0 +1,72 @@
+.restaurant-card {
+  padding: 20px 20px 30px;
+  max-width: 295px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: start;
+  transition: 0.3s all;
+  border: 1px solid #fff;
+  cursor: pointer;
+  .res-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  .card-info {
+    padding: 14px 0;
+    word-break: break-word;
+    h2 {
+      font-size: 17px;
+    }
+    .food-types {
+      color: #686b78;
+      font-size: 13px;
+      margin-top: 4px;
+      margin-bottom: 0px;
+    }
+  }
+  .card-prop {
+    color: #686b78;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .rating {
+      background-color: #48c479;
+      color: #fff;
+      padding: 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 30px;
+      img {
+        width: 12px;
+        height: 12px;
+        margin-right: 2px;
+      }
+      &.no-background{
+          background-color: #fff;
+          color: #686b78;
+      }
+    }
+  }
+  .quick-view {
+    display: none;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    color: #5d8ed5;
+    font-size: 13px;
+    h2 {
+      margin-bottom: unset;
+    }
+  }
+  &:hover {
+    border-color: #d3d5df;
+    box-shadow: 0 4px 7px 0 rgba(218, 220, 230, 0.6);
+    .quick-view {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.Home-View {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  .sidebar {
+    flex: 0 20%;
+  }
+  .swiggy-brands {
+    flex: 0 80%;
+    h1 {
+      text-align: start;
+      padding: 0 20px;
+      text-transform: capitalize;
+      margin-top: 0px;
+    }
+    .res-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+      border-bottom: 1px solid #ccc;
+    }
+    .more-container {
+      color: red;
+      width: 295px;
+      margin: 20px 20px 40px;
+      height: 295px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid red;
+      cursor: pointer;
+    }
+  }
+}
